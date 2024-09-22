@@ -1,4 +1,19 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json"
+  "compilerOptions": {
+    "target": "ESNext",                          // Kompilieren auf modernes JavaScript
+    "module": "ESNext",                          // Modulauflösung auf ES Module
+    "moduleResolution": "node",                  // Auflösung von Modulen
+    "esModuleInterop": true,                     // Interoperabilität zwischen CommonJS und ESM
+    "strict": true,                              // Aktiviert strikte Typüberprüfung
+    "jsx": "preserve",                           // Speziell für Vue-Projekte, um JSX zu unterstützen
+    "resolveJsonModule": true,                   // Ermöglicht das Importieren von JSON-Dateien
+    "skipLibCheck": true,                        // Bibliotheksprüfung überspringen, um die Kompilierung zu beschleunigen
+    "types": ["@types/node"],                    // Nuxt- und Node.js-Typen laden
+    "baseUrl": ".",                              // Basis-URL für die Auflösung von Modulen
+    "paths": {
+      "@/*": ["./*"]                             // Alias für Pfade
+    }
+  },
+  "include": ["**/*.ts", "**/*.vue"],            // Alle .ts- und .vue-Dateien einbeziehen
+  "exclude": ["node_modules", ".nuxt", "dist"]   // Vermeide, unnötige Ordner zu kompilieren
 }

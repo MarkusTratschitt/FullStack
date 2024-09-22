@@ -22,3 +22,36 @@ logs
 .env
 .env.*
 !.env.example
+.package-lock.json
+
+# docker
+docker-compose.yml
+docker-compose.override.yml
+docker-compose.dev.yml
+docker-compose.prod.yml
+docker-compose.local.yml
+docker-compose.staging.yml
+docker-compose.production.yml
+docker-compose.test.yml 
+docker-compose.build.yml
+docker-compose.build.prod.yml
+docker-compose.build.staging.yml
+docker-compose.build.production.yml
+docker-compose.build.test.yml
+docker-compose.build.local.yml
+docker-compose.build.dev.yml
+docker-compose.build.override.yml
+docker-compose.build.example.yml
+docker-compose.build.example.prod.yml
+docker-compose.build.example.staging.yml
+docker-compose.build.example.production.yml
+docker-compose.build.example.test.yml
+
+docker-compose.build.example.local.yml
+docker-compose.build.example.dev.yml
+docker-compose.build.example.override.yml
+docker-compose.build.example.yml
+docker-compose.build.yml
+
+# OS
+.DS_Store
